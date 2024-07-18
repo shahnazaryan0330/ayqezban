@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Noto';
+    src: url(./fonts/NotoSansArmenian-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Noto';
+    src: url(./fonts/NotoSansArmenian-Bold.ttf);
+    font-weight: 700;
+}
+
+:root {
+    --color-1: #1e2227;
+    --color-2: #23272e;
+    --color-3: #e4edff;
+    --color-4: #00f7ff;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+
+    font-family: 'Noto';
+}
+
+body {
+    margin: 0px;
+    color: var(--color-3);
+    background: var(--color-1);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+input {
+    background: none;
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    color: var(--color-3);
+}
+
+.container {
+    padding: 15px;
+    margin: auto;
+    max-width: 510px;
+    min-width: 320px;
+}
+
+.header {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    background: var(--color-2);
+}
+
+.title {
+    margin: 0;
+    color: var(--color-3);
+    font-weight: 700;
+    font-size: 28px;
+}
+
+.list {
+    overflow-y: scroll;
+    max-height: 50vh;
+}
+
+.item {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 7px;
+    background: var(--color-2);
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--color-3);
+}
+
+.actions {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    width: 100%;
+    color: var(--color-4);
+}
+
+.accept,
+.edit,
+.delete {
+    width: 100%;
+    padding: 5px;
+    color: var(--color-3);
+    background: var(--color-1);
+}
+
+.accept {
+    border-bottom: 3px solid #00ffa6a4;
+}
+
+.edit {
+    border-bottom: 3px solid #0091ffa4;
+}
+
+.delete {
+    border-bottom: 3px solid #ff004ca4;
+}
+
+.footer {
+    margin-top: auto;
+    width: 100%;
+    background: var(--color-2);
+}
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.itemName, .itemPrice {
+    width: 100%;
+    padding: 10px;
+    border-radius: 7px;
+    background: var(--color-1);
+    font-size: 14px;
+    color: var(--color-3);
+}
+
+.addBtn {
+    padding: 20px 40px;
+    border-radius: 30px;
+    background: #00ff95;
+}
+
+.editAccess {
+    padding: 20px 40px;
+    border-radius: 30px;
+    background: #5d00ff;
+}
+
+.disabled {
+    opacity: 0.2;
+    background: #0000008e;
+}
